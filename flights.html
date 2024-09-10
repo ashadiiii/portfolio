@@ -34,27 +34,31 @@
 							<h1 class="major">Flight Management System</h1>
 							<span class="image img"><img src="images/flights.jpg" alt="" /></span>
 							<h2>Overview</h2>
-							<p>An AI-powered quiz generator that ingests PDF documents, extracts relevant information, and generates multiple-choice quiz questions on a user-specified topic. Built using a custom pipeline of natural language processing (NLP) and machine learning models to automate the creation of quizzes, this tool allows users to create tailored quizzes based on various documents in a few simple steps.</p>
+							<p>This project leverages the "function calling" capabilities of Large Language Models to build a functional and conversational flight management assistent. User's can interact with the system through a chat interface, requesting flight searches , bookings, updates, or cancellations.  </p>
                             <h2> Technologies Used</h2>
                             <ul class="project">
                                 <li><b>Streamlit</b> : For the user interface and interactivity.</li>
                                 <li><b>Python</b> : Backend language for task automation and model integration.</li>                           
-                                <li><b>Chroma Collection</b> : For document vectorization and storage</li>   
-                                <li><b>Langchain</b> : For integrating and managing language models and document processing workflows. </li>                           
-   
+                                <li><b>Gemini model</b> : To access the "function calling" capability</li>   
+                                <li><b>Pydantic</b> : To ensure correct input validation </li>
+								<li><b>FastAPI</b>: Back-end server in which the tasks are executed and information is retrieved from.</li>
+								<li><b>SQLAlChemy</b>:Allows to interact and access the database.</li>
                             </ul>
                             <h2>Role and Responsibilities</h2>
-                            <p>The use of the Retrieval Augumented Generation framework in this project allows to retrieve domain specific results that match the grade level and education of the user. This is done by extracting the resources provided by the user, then this data is converted to vectors and fed into the Large language Model as context and the questions will be generated with the retrieved knowledge.</p>
+                            <p>The model is build with a relational database that holds data on the flights, customer info, and booking info done by customers. The fastAPI server interacts with this database to retrieve or update the information in the database. The AI function calling capability is used to call the correct API request based on the query provided in the chat interface by the user. The formulation of the correct input parameters to make the right API call is also done by this AI capability by analysing the current and previous user queries present in the chat interface.</p>
                             <h2> Features </h2>
                             <ul class="project">
-                                <li><b>Document Ingestion</b> : Upload PDFs and automatically ingest content into a structured format.</li>
-                                <li><b>Topic-Based Quiz Generation</b> : Users can specify the topic from the document on which they want the quiz to be based.</li>
-                                <li><b>Question Customization</b> : Select the number of questions to generate, allowing for quizzes of varying lengths.</li>
-                                <li><b>Interactive Quiz Interface</b> : Users can take the generated quiz, with immediate feedback on their answers, and view explanations for incorrect responses.</li>
-                                <li><b>Quiz Navigation</b> : Users can navigate between questions and review their answers with provided explanations.</li>
+                                <li><b>Flight Search Functionality</b> : Users can search for flights by specifying their origin, destination, and departure date. The system retrieves available flight options from the database.</li>
+                                <li><b>Real-Time Flight Booking and Flight Management</b> :The assitant allows to book flights, update previous bookins, delete previous bookings, altogether through just the chat interface. </li>
+                                <li><b>Interactive Chat Interface</b> : The chat-based interface allows users to interact with the assistant seamlessly, receiving real-time responses and booking confirmations.</li>
+                                <li><b>Conversational Feedback with Response Handling</b> :The system analyzes the conversation to invoke relevant functions, providing a personalized and responsive user experience.</li>
+                                <li><b>Scalable AI Integration</b> : Using Google’s Vertex AI infrastructure, the system is scalable and can handle a wide range of interactions and booking management scenarios efficiently.
+
+								</li>
                             </ul>
                             <h2>Outcome</h2>
-                            <p>The AI Quiz Generator successfully streamlines the process of creating quizzes for educational or assessment purposes. It automates a traditionally time-consuming task, providing educators, students, and content creators with a quick and easy way to generate high-quality quizzes from any document. The integration of a RAG framework allows tailoring questions to users' specific interest or learning goals.</p>
+                            <p>This project using function calling AI offers a more efficient and beneficial flight management system compared to traditional online systems by providing natural language interaction, personalized assistance, proactive suggestions, automated task completion, and continuous learning capabilities. Users can interact conversationally, eliminating the need for complex menus and forms. The AI learns user preferences and anticipates needs, suggesting personalized options and automating complex tasks, ultimately streamlining the booking process and enhancing the overall user experience.
+							</p>
                         </div>
 					</section>
 
