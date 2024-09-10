@@ -34,10 +34,29 @@
 					<section id="main" class="wrapper">
 						<div class="inner">
 							<h1 class="major">AI Quiz Generator</h1>
-							<span class="image left"><img src="images/AIQuiz.jpg" alt="" /></span>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
-						</div>
+							<span class="image img"><img src="images/AIQuiz.jpg" alt="" /></span>
+							<h2>Overview</h2>
+                            <p>An AI-powered quiz generator that ingests PDF documents, extracts relevant information, and generates multiple-choice quiz questions on a user-specified topic. Built using a custom pipeline of natural language processing (NLP) and machine learning models to automate the creation of quizzes, this tool allows users to create tailored quizzes based on various documents in a few simple steps.</p>
+                            <h2> Technologies Used</h2>
+                            <ul class="project">
+                                <li><b>Streamlit</b> : For the user interface and interactivity.</li>
+                                <li><b>Python</b> : Backend language for task automation and model integration.</li>                           
+                                <li><b>Chroma Collection</b> : For document vectorization and storage</li>   
+                                <li><b>Langchain</b> : For integrating and managing language models and document processing workflows. </li>                           
+   
+                            </ul>
+                            <h2>Role and Responsibilities</h2>
+                            <p>The use of the Retrieval Augumented Generation framework in this project allows to retrieve domain specific results that match the grade level and education of the user. This is done by extracting the resources provided by the user, then this data is converted to vectors and fed into the Large language Model as context and the questions will be generated with the retrieved knowledge.</p>
+                            <h2> Features </h2>
+                            <ul class="project">
+                                <li><b>Document Ingestion</b> : Upload PDFs and automatically ingest content into a structured format.</li>
+                                <li><b>Topic-Based Quiz Generation</b> : Users can specify the topic from the document on which they want the quiz to be based.</li>
+                                <li><b>Question Customization</b> : Select the number of questions to generate, allowing for quizzes of varying lengths.</li>
+                                <li><b>Interactive Quiz Interface</b> : Users can take the generated quiz, with immediate feedback on their answers, and view explanations for incorrect responses.</li>
+                                <li><b>Quiz Navigation</b> : Users can navigate between questions and review their answers.</li>
+                            </ul>
+
+                            </div>
 					</section>
 
 			</div>

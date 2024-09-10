@@ -2570,7 +2570,7 @@ input, select, textarea {
 	}
 
 		.image img {
-			border-radius: 0.25em;
+			border-radius: 0.35em;
 			display: block;
 		}
 
@@ -2802,7 +2802,15 @@ input, select, textarea {
 			ul.contact > li:first-child {
 				margin-top: 0;
 			}
-
+    ul.project{
+		list-style: none;
+		padding: auto;
+		display: block;
+	}
+	     ul.project > li {
+		   padding-left: 0.5%;
+		   margin: 0.5em 2em 0 0;
+	       }
 /* Icons */
 
 	ul.icons {
