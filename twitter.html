@@ -16,7 +16,6 @@
 
 		<!-- Header -->
 			<header id="header">
-				<a href="index.html" class="title">Hyperspace</a>
 				<nav>
 					<ul>
 						<li><a href="index.html">Home</a></li>
@@ -31,11 +30,29 @@
 				<!-- Main -->
 					<section id="main" class="wrapper">
 						<div class="inner">
-							<h1 class="major">A Generic Page</h1>
-							<span class="image fit"><img src="images/twitter.jpg" alt="" /></span>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
-						</div>
+							<h1 class="major">Twitter Sentiment Analysis</h1>
+							<span class="image img"><img src="images/twitter.jpg" alt="" /></span>
+							<h2>Overview</h2>
+							<p>This project involves building a sentiment analysis model that classifies tweets as positive or negative using a machine learning pipeline. The project focuses on collecting and preprocessing Twitter data, applying Natural Language Processing (NLP) techniques, and training a Logistic Regression model to classify the sentiment of tweets. The model's performance is evaluated on a test dataset and deployed for future predictions. </p>
+                            <br>
+                            <h2> Technologies Used</h2>
+                            <ul class="contact">
+                                <li><b>Python</b> : Backend language for task automation and model integration.</li>   
+                                <li><b>Libraries: </b></li>
+                                   <ul class = "project">
+                                    <li><b>Pandas and numpy</b>: For data manipulation</li>
+                                    <li><b>NLTK(Natural Language ToolKit)</b> : For stopword removal and stemming</li>
+                                    <li><b>skit-learn</b> : For model development, training, and evaluation (Logistic Regression, TfidfVectorizer, train_test_split, accuracy_score).</li>
+                                    <li><b>Pickle</b>: For model serialization and persistence.</li>
+                                   </ul>                        
+                            </ul>
+                            <br>
+                            <h2>Role and Responsibilities</h2>
+                            <p>The kaggle web source was used to retrieve 1.6 million tweets as training data in order to train the model. After preprocessing and cleaning the data it is converted tf-idf numerical values using the Tf-dfVectorizer. The translated data is then fed into the Neural Network where the machine learning mmodel uses this data to identify the logistic regression pattern of the data(sequence of words) which determine a phrase as postive or negative. </p>            
+                            <h2>Outcome</h2>
+                            <p>The project results in a functional sentiment analysis model capable of predicting whether a tweet is positive or negative. The Logistic Regression model, trained on the preprocessed Twitter dataset, demonstrates a high level of accuracy on both training and test sets. This model can be deployed for real-time sentiment analysis of tweets, making it applicable in various social media monitoring and analysis use cases.
+							</p>
+                        </div>
 					</section>
 
 			</div>

@@ -2572,7 +2572,7 @@ input, select, textarea {
 		.image img {
 			border-radius: 0.35em;
 			display: center;
-			max-width: 60%;
+			width: 60%;
 			padding-bottom: 2em;
 
 		}
